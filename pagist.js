@@ -33,7 +33,8 @@ Pagist.DEFAULT_LAYOUT = function(html) {
     + '<script src="http://code.jquery.com/jquery.min.js"><\/script>'
     + '<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/js/bootstrap.min.js"><\/script>'
     + '<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>'
-    + '<div class="container">'
+    + '<div class="container">' 
+    +  this.ribbon 
     + '<h2>' + (this.title || '') + '</h2>'
     +   html
     + '</div>'
@@ -111,7 +112,11 @@ Pagist.main = function() {
           '<b>gist <a href="' + res.data.html_url + '">#' + res.data.id + '</a></b>'
         + ' by <a href="https://github.com/' + res.data.user.login + '">' + res.data.user.login + '</a>'
         + ' <a href="' + res.data.html_url + '#comments">&raquo; comments</a>'
-      , context = { footer: footer, title: title }
+      , 
+      
+     ribbon = '<a href="' + res.data.html_url + '">' + 
+     '<img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png" alt="Fork me on GitHub"></a>',
+     context = { footer: footer, title: title, ribbon: ribbon }
     document.write(Pagist.render(list, context))
   }
 
