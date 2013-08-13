@@ -29,7 +29,7 @@ Pagist.MathExtractor = function() {
 Pagist.DEFAULT_LAYOUT = function(html) {
   return '<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap-combined.min.css" rel="stylesheet">'
     + '<link href="css.css" rel="stylesheet">'
-    + '<link href="http://twitter.github.io/bootstrap/assets/js/google-code-prettify/prettify.css" rel="stylesheet">'
+    + '<link href="http://getbootstrap.com/2.3.2/assets/js/google-code-prettify/prettify.css" rel="stylesheet">'
     + '<script src="http://code.jquery.com/jquery.min.js"><\/script>'
     + '<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/js/bootstrap.min.js"><\/script>'
     + '<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>'
