@@ -41,6 +41,7 @@ Pagist.DEFAULT_LAYOUT = function(html) {
     +  '<br/>'
     +   this.editme
     +   html
+    +   this.editme
     +   this.comments
     + '</div>'
     + '<div class="footer">'
