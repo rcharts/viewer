@@ -113,7 +113,7 @@ Pagist.main = function() {
       }
     }
     var title = res.data.description
-    var editme = '<a target="_blank" class="btn btn-success btn-mini" href="/viewer/live/index.html#?n=' + res.data.id + '"> <span class="fa fa-edit"></span> Edit Me </a>';
+    var editme = '<a style="margin-left: 5px;" target="_blank" class="btn btn-success btn-mini" href="/viewer/live/index.html#?n=' + res.data.id + '"> <span class="fa fa-edit"></span> Edit Me </a>';
     var footer =
           '<b>gist <a href="' + res.data.html_url + '">#' + res.data.id + '</a></b>'
         + ' by <a href="https://github.com/' + res.data.user.login + '">' + res.data.user.login + '</a>'
