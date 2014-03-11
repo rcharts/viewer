@@ -36,7 +36,7 @@ Pagist.DEFAULT_LAYOUT = function(html) {
     + '<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>'
     + '<div class="container">' 
     +  this.ribbon 
-    + '<h2>' + (this.title || '') + '</h2>'
+    + '<h2>' + (this.title || '') + this.editme + '</h2>'
     +   this.sharing
     +  '<br/>'
     +   this.editme
