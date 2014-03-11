@@ -111,7 +111,7 @@ Pagist.main = function() {
       }
     }
     var title = res.data.description
-    var editme = '<a href="/viewer/index.html#?n=' + res.data.id + '"> Edit Me </a>';
+    var editme = '<a href="/viewer/live/index.html#?n=' + res.data.id + '"> Edit Me </a>';
     var footer =
           '<b>gist <a href="' + res.data.html_url + '">#' + res.data.id + '</a></b>'
         + ' by <a href="https://github.com/' + res.data.user.login + '">' + res.data.user.login + '</a>'
