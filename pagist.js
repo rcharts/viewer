@@ -29,6 +29,7 @@ Pagist.MathExtractor = function() {
 Pagist.DEFAULT_LAYOUT = function(html) {
   return '<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap-combined.min.css" rel="stylesheet">'
     + '<link href="css.css" rel="stylesheet">'
+    + '<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">'
     + '<link href="http://getbootstrap.com/2.3.2/assets/js/google-code-prettify/prettify.css" rel="stylesheet">'
     + '<script src="http://code.jquery.com/jquery.min.js"><\/script>'
     + '<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/js/bootstrap.min.js"><\/script>'
@@ -111,7 +112,7 @@ Pagist.main = function() {
       }
     }
     var title = res.data.description
-    var editme = '<a href="/viewer/live/index.html#?n=' + res.data.id + '"> Edit Me </a>';
+    var editme = '<a class="btn btn-success btn-mini" href="/viewer/live/index.html#?n=' + res.data.id + '"> <span class="fa fa-edit"></span> Edit Me </a>';
     var footer =
           '<b>gist <a href="' + res.data.html_url + '">#' + res.data.id + '</a></b>'
         + ' by <a href="https://github.com/' + res.data.user.login + '">' + res.data.user.login + '</a>'
