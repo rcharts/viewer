@@ -38,6 +38,7 @@ Pagist.DEFAULT_LAYOUT = function(html) {
     +  this.ribbon 
     + '<h2>' + (this.title || '') + '</h2>'
     +   this.sharing
+    +  '<br/>'
     +   this.editme
     +   html
     +   this.comments
